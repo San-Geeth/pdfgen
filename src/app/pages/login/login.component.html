@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="justify-content-center">
+        <span class="p-float-label">
+            <input pInputText id="username" [(ngModel)]="value" />
+            <label htmlFor="username">Username</label>
+        </span>
+    </div>
+    <div class="justify-content-center mt-5">
+        <span class="p-float-label">
+            <p-password [(ngModel)]="password" [feedback]="false" [toggleMask]="true"></p-password>
+            <label for="password">Password</label>
+        </span>
+    </div>
+</div>
