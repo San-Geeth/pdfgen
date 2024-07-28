@@ -1,5 +1,5 @@
 <div class="grid p-fluid mt-3">
-    <div class="col-12 md:col-3">
+    <div class="col-12 md:col-3 mt-3">
         <span class="p-float-label">
             <input
                 type="number"
@@ -11,13 +11,13 @@
             <label for="inputtext1">Year</label>
         </span>
     </div>
-    <div class="col-12 md:col-3">
+    <div class="col-12 md:col-3 mt-3">
         <span class="p-float-label">
             <p-dropdown [options]="makes" [(ngModel)]="selected_make" optionLabel="make" [showClear]="true" placeholder="Make" (ngModelChange)="checkFields()"></p-dropdown>
             <label for="inputtext2">Make</label>
         </span>
     </div>
-    <div class="col-12 md:col-3">
+    <div class="col-12 md:col-3 mt-3">
         <span class="p-float-label">
             <input
                 type="text"
@@ -29,7 +29,7 @@
             <label for="inputtext2">Model</label>
         </span>
     </div>
-    <div class="col-12 md:col-3">
+    <div class="col-12 md:col-3 mt-3">
         <span class="p-float-label">
             <input
                 type="text"
@@ -40,13 +40,13 @@
             <label for="inputtext2">Car Name</label>
         </span>
     </div>
-    <div class="col-12 md:col-3">
+    <div class="col-12 md:col-3 mt-3">
         <span class="p-float-label">
             <p-dropdown [options]="transmissions" [(ngModel)]="selected_transmission" optionLabel="type" [showClear]="true" placeholder="Transmission" (ngModelChange)="checkFields()"></p-dropdown>
             <label for="inputtext2">Transmission</label>
         </span>
     </div>
-    <div class="col-12 md:col-3">
+    <div class="col-12 md:col-3 mt-3">
         <span class="p-float-label">
             <input
                 type="text"
@@ -58,7 +58,7 @@
             <label for="inputtext2">Chassis</label>
         </span>
     </div>
-    <div class="col-12 md:col-3">
+    <div class="col-12 md:col-3 mt-3">
         <span class="p-float-label">
             <input
                 type="text"
@@ -70,19 +70,19 @@
             <label for="inputtext2">Engine</label>
         </span>
     </div>
-    <div class="col-12 md:col-3">
+    <div class="col-12 md:col-3 mt-3">
         <span class="p-float-label">
             <p-dropdown [options]="fuels" [(ngModel)]="selected_fuel" optionLabel="type" [showClear]="true" placeholder="Transmission" (ngModelChange)="checkFields()"></p-dropdown>
             <label for="inputtext2">Fuel</label>
         </span>
     </div>
-    <div class="col-12 md:col-3">
+    <div class="col-12 md:col-3 mt-3">
         <span class="p-float-label">
             <textarea rows="5" cols="30" pInputTextarea [(ngModel)]="note" placeholder="Note"></textarea>
             <label for="inputtext2">Note</label>
         </span>
     </div>
-    <div class="col-12 md:col-12">
+    <div class="col-12 md:col-12 mt-3">
         <button pButton pRipple label="Print" class="p-button-success" [disabled]="isBtnDisabled" (click)="onBtnClick()"></button>
     </div>
 </div>
