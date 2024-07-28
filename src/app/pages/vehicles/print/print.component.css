@@ -1,0 +1,62 @@
+/* Container for the table */
+.table-container {
+    overflow-x: auto; /* Allow horizontal scrolling */
+    width: 100%; /* Ensure it takes full width of its container */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+}
+
+/* Table styling */
+.print-table {
+    width: 1000px; /* Set a fixed width that suits your web view format */
+    border-collapse: collapse; /* Collapse table borders */
+    margin: 20px; /* Add margin for print */
+}
+
+.btn-container {
+    margin: 20px;
+}
+/* Styling for table headers */
+.print-table th, .print-table td {
+    border: 1px solid #ddd; /* Add a border to cells */
+    padding: 12px; /* Increase padding to make cells taller */
+    text-align: left; /* Align text to the left */
+}
+
+/* Header styling */
+.print-table th {
+    background-color: #f4f4f4; /* Background color for headers */
+    font-weight: bold; /* Make header text bold */
+}
+
+/* Ensure first <td> is narrower than the second <td> */
+.print-table td:first-child {
+    width: 25%; /* Set width for the first <td> */
+}
+
+.print-table td:nth-child(2) {
+    width: 75%; /* Set width for the second <td> */
+}
+
+/* Mobile responsiveness override */
+@media only screen and (max-width: 768px) {
+    .print-table {
+        width: 1000px; /* Ensure the table maintains its width on mobile */
+    }
+    
+    .print-table th, .print-table td {
+        white-space: nowrap; /* Prevent text from wrapping in cells */
+    }
+}
+
+/* Print-specific styles */
+@media print {
+    .print-table {
+        width: auto; /* Adjust width for print */
+        margin: 20mm; /* Add margins for print */
+    }
+    
+    /* Hide elements that should not be printed */
+    .no-print {
+        display: none;
+    }
+}

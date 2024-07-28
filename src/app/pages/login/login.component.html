@@ -1,14 +1,19 @@
 <div class="container">
     <div class="justify-content-center">
         <span class="p-float-label">
-            <input pInputText id="username" [(ngModel)]="value" />
+            <input pInputText class="p-inputtext-lg" id="username" [(ngModel)]="value" (ngModelChange)="updateButtonState()"/>
             <label htmlFor="username">Username</label>
         </span>
     </div>
     <div class="justify-content-center mt-5">
         <span class="p-float-label">
-            <p-password [(ngModel)]="password" [feedback]="false" [toggleMask]="true"></p-password>
+            <p-password class="p-inputtext-lg" [(ngModel)]="password" [feedback]="false" [toggleMask]="true" (ngModelChange)="updateButtonState()"></p-password>
             <label for="password">Password</label>
         </span>
+    </div>
+    <div class="justify-content-center mt-5">
+        <div class="card flex justify-content-center">
+            <p-button label="Submit" (onClick)="onLogin()" [disabled]="btnEnable"></p-button>
+        </div>
     </div>
 </div>

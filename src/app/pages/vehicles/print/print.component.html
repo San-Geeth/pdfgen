@@ -1,0 +1,46 @@
+<div>
+    <table #tableToPrint class="print-table mt-5">
+        <tbody class="btn-container">
+            <br><br><br><br>
+            <tr>
+                <td>Year</td>
+                <td>{{ printData.year }}</td>
+            </tr>
+            <tr>
+                <td>Make</td>
+                <td>{{ printData.make }}</td>
+            </tr>
+            <tr>
+                <td>Model</td>
+                <td>{{ printData.model }}</td>
+            </tr>
+            <tr>
+                <td>Car Name</td>
+                <td>{{ printData.car_name }}</td>
+            </tr>
+            <tr>
+                <td>Transmission</td>
+                <td>{{ printData.transmission }}</td>
+            </tr>
+            <tr>
+                <td>Chassis</td>
+                <td>{{ printData.chassis }}</td>
+            </tr>
+            <tr>
+                <td>Engine</td>
+                <td>{{ printData.engine }}</td>
+            </tr>
+            <tr>
+                <td>Fuel</td>
+                <td>{{ printData.fuel }}</td>
+            </tr>
+            <tr>
+                <td>Note</td>
+                <td>{{ printData.note }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="btn-container">
+        <button pButton pRipple label="Submit" class="p-button-success" (click)="downloadPDF()"></button>
+    </div>
+</div>
